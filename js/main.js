@@ -43,4 +43,38 @@ $(function(){
 		//3.设置title的值
 		$newsTitle.text(title);
 	});
+
+	//移动端手势滑动轮播图
+
+	//1.获取到轮播组件
+	var $Carousel  = $('#main_ad');
+
+	//保存起始，结束的坐标值
+	var startX, endX,offsetX;
+
+	//当滑动距离小于某个值时不滑动
+
+	var target = 100;
+	//2.获取手势触摸屏幕参数，判断滑动左右滑动
+	$Carousel.on('touchstart',function(e){
+		startX = e.originalEvent.touches[0].clientX
+		/*console.log(startX);*/
+	});
+	$Carousel.on('touchmove',function(e){
+		endX = e.originalEvent.touches[0].clientX;
+		//记录最后滑动的距离
+		offsetX = startX - endX;
+		/*console.log(endX);*/
+		
+		
+	});
+	$Carousel.on('touchend',function(e){
+		if(Math.abs(offsetX) > target){
+			$(this).carousel(offsetX > 0 ? 'next' : 'prev');
+		}
+		
+	});
+
+
+	//3.用Bootstrap Carousel 组件实现滑动
 });
