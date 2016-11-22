@@ -114,6 +114,83 @@ body{
 .panel-product.state-4::after {
   content: "\e928";
 }
+/* 底部合作伙伴图标 */
+.icon-uniE930:hover {
+  color: #df3232;
+}
+
+.icon-uniE930:before {
+  content: "\e946";
+}
+
+.icon-uniE92F:hover {
+  color: #e8380d;
+}
+
+.icon-uniE92F:before {
+  content: "\e92f";
+}
+
+.icon-uniE92E:hover {
+  color: #ed6f00;
+}
+
+.icon-uniE92E:before {
+  content: "\e92e";
+}
+
+.icon-uniE92A:hover {
+  color: #159f69;
+}
+
+.icon-uniE92A:before {
+  content: "\e92a";
+}
+
+.icon-uniE929:hover {
+  color: #07569e;
+}
+
+.icon-uniE929:before {
+  content: "\e929";
+}
+
+.icon-uniE931:hover {
+  color: #004098;
+}
+
+.icon-uniE931:before {
+  content: "\e931";
+}
+
+.icon-uniE92C:hover {
+  color: #d32019;
+}
+
+.icon-uniE92C:before {
+  content: "\e92c";
+}
+
+.icon-uniE92B:hover {
+  color: #3eac4a;
+}
+
+.icon-uniE92B:before {
+  content: "\e92b";
+}
+
+.icon-uniE92D:hover {
+  color: #2bb289;
+}
+
+.icon-uniE92D:before {
+  content: "\e92d";
+}
+
+i:hover:,
+i:focus{
+  text-decoration: none;
+}
 
 /* å¤´éƒ¨åŒºåŸŸ */
 #header{
@@ -168,86 +245,87 @@ body{
   background-color: #b4b4b4;
   } */
 
-  /* 广告轮播 */
-  #main_ad{}
+/* 广告轮播 */
+#main_ad{}
+#main_ad > .carousel-inner > .item{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main_ad > .carousel-inner > .item > img{
+  width: 100%;
+}
+/* 利用媒体查询修改大于768宽度时 高度才设置为410 其他情况不设置 */
+@media (min-width:768px) {
   #main_ad > .carousel-inner > .item{
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 410px;
   }
-  #main_ad > .carousel-inner > .item > img{
-    width: 100%;
-  }
-  /* 利用媒体查询修改大于768宽度时 高度才设置为410 其他情况不设置 */
-  @media (min-width:768px) {
-    #main_ad > .carousel-inner > .item{
-      height: 410px;
-    }
-  }
+}
 
-  #feacture{
-    border-bottom: 1px solid #c0c0c0;
-    padding: 40px 0;
-    background-color: #fff;
-  }
-  #feacture a {
-    text-decoration: none;
-    color: #333;
-  }
-  #feacture a i{
-    font-size: 30px;
-    padding: 10px 0;
-    display: block;
-  }
-  #feacture a:hover{
-    color: #E9232C;
-  }
-  #feacture a .media-body{
-    padding: 5px 0;
-  }
-  #feacture > .container > .row > div{
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
+#feacture{
+  border-bottom: 1px solid #c0c0c0;
+  padding: 40px 0;
+  background-color: #fff;
+}
+#feacture a {
+  text-decoration: none;
+  color: #333;
+}
+#feacture a i{
+  font-size: 30px;
+  padding: 10px 0;
+  display: block;
+}
+#feacture a:hover{
+  color: #E9232C;
+}
+#feacture a .media-body{
+  padding: 5px 0;
+}
+#feacture > .container > .row > div{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
 
-  /* 立即预约 */
-  #order{
-    border-bottom: 1px solid #c0c0c0;
-    padding: 20px 0;
-  }
-  #order > .container > p{
-    margin-bottom: 0;
-    font-size: 14px;  
+/* 立即预约 */
+#order{
+  border-bottom: 1px solid #c0c0c0;
+  padding: 20px 0;
+}
+#order > .container > p{
+  margin-bottom: 0;
+  font-size: 14px;  
 
-  }
-  #order > .container > .pull-left > span{
-    color:#E9232C;
-  }
-  #order > .container > .pull-left > a{
-    color:#E9232C;
-    border-bottom: 1px dashed #e9232c;
-  }
-  #order > .container > .pull-left > a:hover{
-    text-decoration: none;
-  }
-  #order > .container > .pull-right > a {
-    color:#333;
-  }
-  .icon-uniE906::before {
-    content: "\e906";
-  }
-  .icon-uniE905::before {
-    content: "\e905";
-  }
+}
+#order > .container > .pull-left > span{
+  color:#E9232C;
+}
+#order > .container > .pull-left > a{
+  color:#E9232C;
+  border-bottom: 1px dashed #e9232c;
+}
+#order > .container > .pull-left > a:hover{
+  text-decoration: none;
+}
+#order > .container > .pull-right > a {
+  color:#333;
+}
+.icon-uniE906::before {
+  content: "\e906";
+}
+.icon-uniE905::before {
+  content: "\e905";
+}
 
   /* 选项卡 */
 #products{
   padding: 40px 0;
   background-color: #f0f0f0;
 }
-#products > .container > .ul-wrapper{
+/* 这样设置有BUG */
+/* #products > .container > .ul-wrapper{
   overflow: scroll;
-}
+} */
 #products > .container > .ul-wrapper > .nav-tabs{
   padding-left: 10px;
 }
@@ -278,9 +356,67 @@ body{
   padding: 20px 0;
 }
 
+#news{padding: 50px 0; border-bottom: 1px solid #c0c0c0;}
+#news .news-title{
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  border-bottom: 1px dashed #c0c0c0;
+  position: relative;
+  margin-right: 10px;
+}
+#news .news-title::after{
+  content: ' ';
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+  position: absolute;
+  right: -10px;
+  bottom: -5px;
+}
+#news .news-tab > li > a{
+  width: 60px;
+  height: 60px;
+  margin: 20px 0;
+  border-radius: 30px;
+}
+#news .news-tab > li > a > i{
+  font-size: 24px;
 
+}
+#news .news-tab-content ul{
+  list-style: none;
+  line-height: 3;
+  font-size: 16px;
+}
 /*  */
+/* 合作伙伴 */
+#hzhb{
+  padding: 50px 0;
+}
+#hzhb ul{
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  overflow: hidden; 
+  margin: 0 auto;
+  clear: both;
+  content: ' ';
+    text-align: center;
+}
+#hzhb ul li {
+  display: inline-block;
 
+}
+#hzhb ul li + li{
+  border-left: 1px dashed #e0e0e0;
+}
+#hzhb ul li a{
+  font-size: 40px;
+  padding: 10px 15px;
+}
 #footer{
   height: 200px;
   background-color: #f0f0f0;
@@ -451,8 +587,11 @@ fieldset[disabled] .btn-register.active {
 }
 .navbar-leader {
   background-color: #fff;
+
   border-color: #f8f8f8;
   margin-bottom: 0;
+  top: 0;
+  width: 100%; 
 }
 .navbar-leader .navbar-brand {
   color: #777;
@@ -559,4 +698,31 @@ fieldset[disabled] .navbar-leader .btn-link:focus {
 .btn-register .badge { 
   color: #E9232C; 
   background-color: #ffffff; 
+}
+
+.news-tab > li {
+  float: left;
+}
+.news-tab > li > a {
+  border-radius: 4px;
+}
+.news-tab > li + li {
+  margin-left: 2px;
+}
+.news-tab > li.active > a,
+.news-tab > li.active > a:hover,
+.news-tab > li.active > a:focus {
+  color: #fff;
+  background-color: #e93223;
+}
+.news-tab > .active > a > .badge {
+  color: #e93223;
+  background-color: #fff;
+}
+.news-tab > li > a:hover{
+  color: #fff;
+  background-color: #e93223;
+}
+.news-tab > li > a > .badge {
+  margin-left: 3px;
 }

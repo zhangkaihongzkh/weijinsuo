@@ -8,7 +8,7 @@
     <!-- 声明当前页面在浏览器端显示的设置 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>微金所</title>
-
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
 
@@ -51,7 +51,7 @@
 	    		</div>
 	    	</div>
     	</div>
-    	<nav class="navbar navbar-leader navbar-static-top" role="navigation">
+    	<nav class="navbar navbar-leader navbar-static-top" role="navigation"  data-spy="affix" data-offset-top="60" data-offset-bottom="200">
 			  <div class="container">
 			   	<div class="navbar-header">
 			   		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_list">
@@ -65,7 +65,7 @@
 			   			<i class="icon-logo"></i>
 			   		</a>
 			   	</div>
-			   	<div class="collapse navbar-collapse" id="nav_list">
+			   	<div class="collapse navbar-collapse" id="nav_list" >
 			   		<ul class="nav navbar-nav">
 				   		<li class="active"><a href="#">我要投资</a></li>
 				   		<li><a href="#">我要借款</a></li>
@@ -515,10 +515,91 @@
     </section>
     <!-- /产品推荐-->
     <!-- 新闻列表 -->
-    <section></section>
+    <section id="news">
+    	<div class="container">
+    		<div class="row">	
+    			<div class="col-md-2 col-md-offset-2">
+						<div class="news-title">全部新闻</div>
+    			</div>
+    			<div class="col-md-1">
+    				<ul class="nav nav-stacked news-tab" role="tablist">
+						  <li class="active" role="presentation"><a href="#home" data-title="全部新闻" data-toggle="tab" role="tab"><i class="icon-news01"></i></a></li>
+						  <li role="presentation"><a href="#profile" data-title="媒体资讯" data-toggle="tab" role="tab"><i class="icon-news02"></i></a></li>
+						  <li role="presentation"><a href="#messages" data-title="微金所头条" data-toggle="tab" role="tab"><i class="icon-news03"></i></a></li>
+						  <li role="presentation"><a href="#settings" data-title="行业资讯" data-toggle="tab" role="tab"><i class="icon-news04"></i></a></li>
+						</ul>
+    			</div>
+    			<div class="col-md-7">
+    				<div class="tab-content news-tab-content">
+    					<div role="tabpanel" class="tab-pane fade in active" id="home">
+								<ul>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+								</ul>
+    					</div>
+    					<div role="tabpanel" class="tab-pane fade " id="profile">								
+	    					<ul> 
+										<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+										<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+										<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+										<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+										<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+										<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+										<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									</ul>
+							</div>
+    					<div role="tabpanel" class="tab-pane fade " id="messages">
+								<ul>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+								</ul>
+    					</div>
+    					<div role="tabpanel" class="tab-pane fade " id="settings">
+								<ul>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+									<li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+								</ul>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
     <!-- /新闻列表 -->
     <!-- 合作伙伴 -->
-    <section></section>
+    <section id="hzhb" class=" hidden-xs hidden-sm">
+    	<div class="container">
+    		<h3 class="text-center">合作伙伴</h3>
+    		
+    		<ul>
+    			<li><a href=""><i class="icon-uniE930"></i></a></li>
+    			<li><a href=""><i class="icon-uniE92F"></i></a></li>
+    			<li><a href=""><i class="icon-uniE92E"></i></a></li>
+    			<li><a href=""><i class="icon-uniE92A"></i></a></li>
+    			<li><a href=""><i class="icon-uniE929"></i></a></li>
+    			<li><a href=""><i class="icon-uniE931"></i></a></li>
+    			<li><a href=""><i class="icon-uniE92C"></i></a></li>
+    			<li><a href=""><i class="icon-uniE92B"></i></a></li>
+    			<li><a href=""><i class="icon-uniE92D"></i></a></li>
+    		</ul>
+    		
+    	</div>
+    </section>
     <!-- /合作伙伴 -->
     <!-- 脚注区域 -->
     <footer id="#footer"></footer>
